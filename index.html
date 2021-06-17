@@ -11,14 +11,16 @@
 <body>
     <div class="container">
         <!-- background image 60vh? -->
-        <header> <!-- fixed -->
+        <header> 
 
             <!-- inizio barra di navigazione-->
             <div id="nav-background">   
-                <nav>
+                <nav> <!-- fixed -->
                     <ul>
-                        <li>
-                            <img src="img/logo.svg" alt="logo Discord">
+                        <li class="logo">
+                            <a href="#">
+                                <img src="img/logo.svg" alt="logo Discord">
+                            </a>
                         </li>
                         <li>
                             <a href="#">Scarica</a>
@@ -36,7 +38,7 @@
                             <a href="#">Assistenza</a>
                         </li>
                         <li>
-                            <button type="button">Accedi</button>
+                            <a href="#">Accedi</a>
                         </li>
                     </ul>
                 </nav>
@@ -44,36 +46,99 @@
            <!-- fine barra di navigazione-->
             
             <div class="jumbotron">
-                
-                <img src="img/jumbo.png" alt="jumbo Discord">    
-           
+
+                <img src="img/jumbo.png" alt="jumbo Discord">   
+
                 <div class="text-jumbo">
-                    <div>Il tuo posto per parlare</div>
-                    <p>Che tu faccia parte di un club scolastico, gruppo gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiaccherare ogni giorno e ritrovarsi più spesso.</p>
+                    <div>
+                        Il tuo posto per parlare
+                    </div>
+                    <p>
+                        Che tu faccia parte di un club scolastico, gruppo gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiaccherare ogni giorno e ritrovarsi più spesso.
+                    </p>
                     <!-- button Scarica per Mac--> <!-- button Apri Discord nel tuo browser-->
-                    <button id="mac" type="button"><i class="fas fa-arrow-circle-down"></i> Scarica per Mac</button>
-                    <button id="open-browser" type="button">Apri Discord nel tuo browser</button>
+                    <a class="download-mac" href="#"><i class="fas fa-arrow-circle-down"></i> Scarica per Mac</a> 
+                    <a id="open-discord-browser" href="#">Apri Discord nel tuo browser</a>     
                 </div>
+
             </div>
         </header>
 
         <main>
 
             <div>
-                <section> <!--bg white - float 2 div(img-dx text-sx) --> 
-
-                </section> 
-                <section> <!--bg grey - float 2 div(text-dx img-sx) -->
-
-                </section> 
-                <section> <!--bg white - float 2 div(img-dx text-sx) -->
-
-                </section> 
-                <section> <!--bg grey - text-center e img-center  - text-center whith star? -bottom-center-->
-
+                <section class="left-section"> <!--bg white - float 2 div(img-dx text-sx) --> 
+                    <img src="img/item1.svg" alt="item1">  
+                    <div class="float right">
+                        <div>
+                            Un luogo a invito con tutto lo spazio necessario per parlare
+                        </div>
+                        <p>
+                            I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemnte parlare della tua giornata senza intasare una chat di gruppo.
+                        </p>
+                    </div>
                 </section> 
             </div>
+
+            <div class="waves">
+                <section class="right-section"> <!--bg grey - float 2 div(text-dx img-sx) -->
+                    <div class="float">
+                        <img src="img/item2.svg" alt="item2"> 
+                    </div>
+                    <div class="right">
+                        <div>
+                            Dove trovarsi è facile
+                        </div>
+                        <p>
+                            Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che sei lì e unirsi instantaneamente senza dover chiamare
+                        </p>
+                    </div>
+
+                </section> 
+            </div> 
+
+            <div>
+                <section class="left-section"> <!--bg white - float 2 div(img-dx text-sx) -->
+                    <img src="img/item3.svg" alt="item3">  
+                    <div class="float right">
+                        <div>
+                            Da pochi a un fandom
+                        </div>
+                        <p>
+                            Dai inizio a una community di qualsiasi dimensione con strumenti di moderazione e accesso ai membri personalizzabile. Concedi ai membri poteri speciali, crea canali privati, e molto altro.
+                        </p>
+                    </div>
+                </section> 
+            </div> 
+
+            <div class="waves">
+                <section class="central-section"> <!--bg grey - text-center e img-center  - text-center whith star? -bottom-center-->
+                       
+                    <div class="text-position">
+                        <div>
+                            Tecnologia affidabile per tenersi in contatto
+                        </div>
+                        <p>
+                            Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in straming, o riunitevi in una sessione di disegno con la condivisione schermo.
+                        </p>    
+                    </div>
+                    
+                    <div class="size-image">
+                        <img src="img/item4-big.svg" alt="item4">
+                    </div>
+                    
+                    <div id="star">
+                        <h2>
+                            Pronto a inziare la tua avventura?
+                        </h2>
+                    </div>
+                    
+                    <a class="download-mac" href="#"><i class="fas fa-arrow-circle-down"></i> Scarica per Mac</a> 
             
+                </section> 
+            </div>   
+
+    
         </main>
 
         <footer>
@@ -82,53 +147,57 @@
                 <ul>
                     <li>
                         <div>
-                            <!--il tuo posto per parlare - italiano - logo social -->
+                            <div>
+                                il tuo posto per parlare
+                            </div>
+                            - italiano - 
+                            logo social -->
                         </div>  
                     </li>
                     <li>
                         <ul> <!--Prodotto -->
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Prodotto</li>
+                            <li><a href="#">Scarica</a></li>
+                            <li><a href="#">Perchè Discord</a></li>
+                            <li><a href="#">Nitro</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Assistenza</a></li>
                         </ul>
                     </li>
                     <li>
                         <ul>  <!-- Compagnia -->        
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Prodotto</li>
+                            <li><a href="#">Chi Siamo</a></li>
+                            <li><a href="#">Lavora con noi</a></li>
+                            <li><a href="#">Marchio</a></li>
+                            <li><a href="#">Redazione</a></li>
+                            <li><a href="#">Negozio</a></li>
                         </ul>
                     </li>
                     <li>
                         <ul> <!-- Risorse -->
-                            <li></li>  
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Risorse</li>  
+                            <li><a href="#">Scarica</a></li>
+                            <li><a href="#">Perchè Discord</a></li>
+                            <li><a href="#">Nitro</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Assistenza</a></li>
+                            <li><a href="#">Scarica</a></li>
+                            <li><a href="#">Perchè Discord</a></li>
+                            <li><a href="#">Nitro</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Assistenza</a></li>
+                            <li><a href="#">Assistenza</a></li>
                         </ul>
                     </li>
                     <li>
                         <ul> <!-- Norme -->
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Norme</li>
+                            <li><a href="#">Scarica</a></li>
+                            <li><a href="#">Perchè Discord</a></li>
+                            <li><a href="#">NItro</a></li>
+                            <li><a href="#">Sicurezza</a></li>
+                            <li><a href="#">Assistenza</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -136,7 +205,8 @@
 
             <hr>
 
-            <!-- logo discord (sx) button Registrati (dx) -->
+            <!-- logo discord (sx) button Registrati (dx) float  --> 
+            <img src="img/logo.svg" alt="logo discord">
 
         </footer>
             
